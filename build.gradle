@@ -23,6 +23,9 @@ task wrapper(type: Wrapper) {
 dependencies {
 	compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '1.5.7.RELEASE'
 	compile group: 'log4j', name: 'log4j', version: '1.2.17'
+	compile group: 'org.springframework', name: 'spring-core', version: '4.3.2.RELEASE'
+	compile group: 'org.springframework', name: 'spring-beans', version: '4.3.2.RELEASE'
+	compile group: 'org.springframework', name: 'spring-context', version: '4.3.2.RELEASE'
 	
 	testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '1.5.7.RELEASE'
 	
