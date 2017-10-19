@@ -42,11 +42,6 @@ public class FunctionalTestATM {
 		return baseHost + ":" + port + basePath; 
 	}
 	
-	//@Test
-	public void testInitializeTestData() {
-		get("/init-testing-data").then().assertThat().statusCode(200);
-	}
-	
 	@Test(timeout = 3000)
 	public void testDepositForActiveAccount() throws InvalidAccountException {
 		System.out.println(getHostURL());
